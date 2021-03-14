@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::use('/', function () {
+Route::match(['get', 'post'],'/', function () {
     return view('welcome');
 });
 
