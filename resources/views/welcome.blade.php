@@ -64,17 +64,8 @@ $users = mysqli_query($connection,'select * from contributor_info');
 
 while($row = mysqli_fetch_assoc($users)){
  
-    ?>
-    <div>
-        <h3>
-            <?php
-                echo $row['first_name']
-            ?>
-        </h3>
-  
-    
-    </div>
-
+    $html= '<div><h3>' .  $row["first_name"] . '</h3></div>';
+    echo $html;
 
 ?>
 
