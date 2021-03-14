@@ -64,7 +64,7 @@ $users = mysqli_query($connection,'select * from contributor_info');
 
 while($row = mysqli_fetch_assoc($users)){
 
-    print_r($row['first_name']);
+    print_r($row);
     // $html= '<div><h3>' . string($row["first_name"]) . '</h3></div>';
     // echo $html;
 
