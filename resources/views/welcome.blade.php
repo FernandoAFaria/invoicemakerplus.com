@@ -66,12 +66,12 @@ $userObj = $users -> fetch_all(MYSQLI_ASSOC);
     foreach ($userObj as $key => $value) {
         # code...
         echo $key;
-        $html = '
-        <div>
-        <h6>' . $key['first_name'] .'</h6>
-        <img src="' . $key['picture'] . '  "
-        </div>       
-        ';
+        // $html = '
+        // <div>
+        // <h6>' . $key['first_name'] .'</h6>
+        // <img src="' . $key['picture'] . '  "
+        // </div>       
+        // ';
     }
 ?>
 
