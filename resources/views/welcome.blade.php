@@ -51,23 +51,20 @@
             <input type='submit' name='submit'>
             </form>
 
-            <?php
+<?php
 
-if(isset($_POST['submit'])){
-    echo 'IS POSTED';
-    print_r($_POST);
 
-}
-$connection = mysqli_connect('localhost','root','Mustang1!','thefrontenddevdb');
+    $connection = mysqli_connect('localhost','root','Mustang1!','thefrontenddevdb');
 
-$users = mysqli_query($connection,'select * from contributor_info');
+    $users = mysqli_query($connection,'select * from contributor_info');
 
-while($row = mysqli_fetch_assoc($users)){
+    while($row = mysqli_fetch_assoc($users)){
 
-    print_r($row);
-    // $html= '<div><h3>' . string($row["first_name"]) . '</h3></div>';
-    // echo $html;
+        // print_r($row);
+        $html= '<div><h3>' . string($row["first_name"]) . '</h3></div>';
+        echo $html;
 
+    }
 ?>
 
 
