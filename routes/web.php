@@ -24,3 +24,7 @@ Route::get('/logout', function () {
     return view('welcome');
 })->name('logout');
 
+Route::get('/register', function () {
+    return view('welcome');
+})->name('register');
+
