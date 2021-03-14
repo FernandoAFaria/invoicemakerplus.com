@@ -56,8 +56,12 @@
 if(isset($_POST['submit'])){
     echo 'IS POSTED';
     print_r($_POST);
-}
 
+}
+$connection = mysqli_connect('localhost','root','Mustang1!','thefrontenddevdb');
+
+$users = mysqli_query($connection,'select * from contributor_info');
+print_r($users);
 ?>
 
 
