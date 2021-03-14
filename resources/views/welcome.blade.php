@@ -37,9 +37,12 @@
             @endif
 
 <?php
-
+    $test = ['bob', 'billy', 'Jane', 'John'];
     echo 45 + 33;
-
+    foreach ($test as &$value) {
+        # code...
+        echo $value;
+    };
 ?>
 
 
