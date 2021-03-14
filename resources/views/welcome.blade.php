@@ -1,5 +1,12 @@
 
+            <?php
 
+if(isset($_POST['submit'])){
+    echo 'IS POSTED';
+    print_r($_POST);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -52,14 +59,7 @@
             <input type='submit'>
             </form>
 
-            <?php
 
-if(isset($_POST['submit'])){
-    echo 'IS POSTED';
-
-}
-
-?>
 
 
         </div>
