@@ -39,6 +39,9 @@
             @endif
 
             <form method='post' >
+           
+            @csrf
+        
             <label>
                 <input type="text" name='username' placeholder='username'>
             </label>
