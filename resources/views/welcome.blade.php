@@ -61,7 +61,8 @@ if(isset($_POST['submit'])){
 $connection = mysqli_connect('localhost','root','Mustang1!','thefrontenddevdb');
 
 $users = mysqli_query($connection,'select * from contributor_info');
-print_r($users);
+$userObj = mysql_fetch_object($users);
+print_r($userObj);
 ?>
 
 
