@@ -60,9 +60,12 @@
 
     while($row = mysqli_fetch_assoc($users)){
 
-        // print_r($row);
-        $html= '<div><h3>' . $row["first_name"] . '</h3></div>';
-        echo $html;
+        ?>
+
+        <div>
+            <h5><?php echo $row['first_name'] ?> </h5>
+            <img src="<?php echo $row['picture'] ?>" />
+        </div>
 
     }
 ?>
