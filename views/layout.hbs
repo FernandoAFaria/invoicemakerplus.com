@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/watercss.css' />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body class=''>
+  <header>
+    <nav class="nav">
+      <div class='container flex-row space-between'>
+        <div class='nav-logo'>Invoice Maker Plus</div>
+        <div class="flex-row">
+          <button role='link'><a>Login</a></button>
+          <div class='nav-dropdown-btn'>
+            <button aria-label="menu" class='hamb-btn'>
+              <span class='sr-only'>Open Dropdown</span>
+              <div class='nav-hamb'></div>
+              <div class='nav-hamb'></div>
+              <div class='nav-hamb'></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class='my-5'>
+    {{{body}}}
+  </main>
+
+
+
+  {{!-- scripts --}}
+  <script src="/javascripts/app.js"></script>
+</body>
+
+</html>

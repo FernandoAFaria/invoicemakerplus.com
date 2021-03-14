@@ -1,0 +1,88 @@
+body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #00b7ff;
+}
+button {
+  margin-bottom: 0;
+}
+.container {
+  position: relative;
+  max-width: 1268px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 1px 1px rgba(211, 211, 211, 0.214);
+}
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+}
+.hamb-btn {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+.nav-hamb{
+  position: relative;
+  width: 16px;
+  height: 1px;
+  background: #323223;
+  margin: .25rem 0;
+}
+
+.sr-only {
+  position: absolute !important; /* Outside the DOM flow */
+  height: 1px; width: 1px; /* Nearly collapsed */
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+  clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1468px) {
+  .container {
+    max-width: 968px;
+  }
+}
+
+@media (max-width: 1268px) {
+}
+
+@media (max-width: 1168px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 968px) {
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: calc(90vw - 2rem);
+  }
+}
+
+@media (max-width: 568px) {
+}
