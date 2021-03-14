@@ -41,7 +41,7 @@
     echo 45 + 33;
     foreach ($test as &$value) {
         # code...
-        echo `<p>$value</p>`;
+        echo "<p>$value</p>";
     };
 ?>
 
