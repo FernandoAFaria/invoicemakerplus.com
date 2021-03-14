@@ -1,3 +1,12 @@
+<?php
+
+    if(isset($_POST['submit'])){
+        echo 'IS POSTED';
+        print_r($POST);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -35,6 +44,17 @@
                     @endauth
                 </div>
             @endif
+
+            <form method='post'>
+            <label>
+                <input type="text" name='username' placeholder='username'>
+            </label>
+
+            <label>
+                <input type="password" name='password' placeholder='password'>
+            </label>
+            <input type='submit'>
+            </form>
 
 <?php
     $test = ['bob', 'billy', 'Jane', 'John'];
