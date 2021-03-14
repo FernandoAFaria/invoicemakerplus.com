@@ -61,7 +61,7 @@
     while($row = mysqli_fetch_assoc($users)){
 
         // print_r($row);
-        $html= '<div><h3>' . string($row["first_name"]) . '</h3></div>';
+        $html= '<div><h3>' . $row["first_name"] . '</h3></div>';
         echo $html;
 
     }
