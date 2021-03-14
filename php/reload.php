@@ -61,6 +61,7 @@ $commands = array(
 	'whoami',
 	'git pull',
 	'git status',
+    'pm2 restart invoicemakerplus.com --watch',
 	'git submodule sync',
 	'git submodule update',
 	'git submodule status',
