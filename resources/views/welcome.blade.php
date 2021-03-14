@@ -1,11 +1,4 @@
-<?php
 
-    if(isset($_POST['submit'])){
-        echo 'IS POSTED';
-        print_r($POST);
-    }
-
-?>
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -56,13 +49,13 @@
             <input type='submit'>
             </form>
 
-<?php
-    $test = ['bob', 'billy', 'Jane', 'John'];
-    echo 45 + 33;
-    foreach ($test as &$value) {
-        # code...
-        echo "<p>$value</p>";
-    };
+            <?php
+
+if(isset($_POST['submit'])){
+    echo 'IS POSTED';
+    print_r($_POST);
+}
+
 ?>
 
 
