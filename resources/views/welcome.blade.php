@@ -53,7 +53,7 @@
 
 if(isset($_POST['submit'])){
     echo 'IS POSTED';
-    print_r($_POST);
+
 }
 
 ?>
