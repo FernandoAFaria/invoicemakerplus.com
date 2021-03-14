@@ -62,7 +62,7 @@ $connection = mysqli_connect('localhost','root','Mustang1!','thefrontenddevdb');
 
 $users = mysqli_query($connection,'select * from contributor_info');
 
-$userObj = $users -> fetch_object();
+$userObj = $users -> fetch_all(MYSQLI_ASSOC);
 print_r($userObj[1]);
 ?>
 
