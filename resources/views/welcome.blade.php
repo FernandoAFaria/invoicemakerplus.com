@@ -63,7 +63,7 @@ $connection = mysqli_connect('localhost','root','Mustang1!','thefrontenddevdb');
 $users = mysqli_query($connection,'select * from contributor_info');
 
 while($row = mysqli_fetch_row($users)){
-    print_r($row);
+    print_r($row['first_name']);
     }
 ?>
 
