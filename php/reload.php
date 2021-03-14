@@ -60,7 +60,7 @@ flush();
 $commands = array(
 	'echo $PWD',
 	'whoami',
-	'sudo git pull',
+	'echo "Mustang1!@" | sudo -s git pull',
 	'git status',
 	'git submodule sync',
 	'git submodule update',
