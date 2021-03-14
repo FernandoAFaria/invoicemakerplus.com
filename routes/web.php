@@ -13,12 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::use('/', function () {
     return view('welcome');
 });
-Route::post('/login', function () {
-    return view('welcome');
-});
+
 Route::get('/login', function () {
     return view('welcome');
 })->name('login');
