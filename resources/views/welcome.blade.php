@@ -53,7 +53,7 @@
 
 <?php
 
-include 'helpers.php';
+require 'helpers.php';
 ?>
 
 
