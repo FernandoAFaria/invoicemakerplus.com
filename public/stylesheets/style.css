@@ -64,6 +64,21 @@ button {
   align-items: center;
 }
 
+/* hero */
+.hero-container {
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+}
+.hero-text{
+  width: 50%
+}
+.hero-image {
+  width: 50%;
+  height: 100%;
+  background: url('/images/invoice_img.svg');
+}
+
 @media (max-width: 1468px) {
   .container {
     max-width: 968px;
