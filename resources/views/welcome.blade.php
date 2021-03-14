@@ -38,7 +38,7 @@
                 </div>
             @endif
 
-            <form method='post' action='/login'>
+            <form method='post' >
             <label>
                 <input type="text" name='username' placeholder='username'>
             </label>
