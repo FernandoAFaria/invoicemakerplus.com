@@ -51,10 +51,10 @@
             <input type='submit' name='submit'>
             </form>
 
-<?php
 
-include(app_path().'/app/helpers.php');
-?>
+
+@include('/app/helpers.php');
+
 
 
         </div>
