@@ -53,7 +53,7 @@
 
 <?php
 
-include 'app/helpers.php';
+include 'helpers.php';
 ?>
 
 
