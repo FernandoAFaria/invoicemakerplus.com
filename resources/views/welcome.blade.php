@@ -1,5 +1,4 @@
-
-            <?php
+<?php
 
 if(isset($_POST['submit'])){
     echo 'IS POSTED';
@@ -56,7 +55,7 @@ if(isset($_POST['submit'])){
             <label>
                 <input type="password" name='password' placeholder='password'>
             </label>
-            <input type='submit'>
+            <input type='submit' name='submit'>
             </form>
 
 
