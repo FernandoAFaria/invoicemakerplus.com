@@ -63,7 +63,15 @@ $connection = mysqli_connect('localhost','root','Mustang1!','thefrontenddevdb');
 $users = mysqli_query($connection,'select * from contributor_info');
 
 $userObj = $users -> fetch_all(MYSQLI_ASSOC);
-print_r($userObj);
+    foreach ($userObj as $key => $value) {
+        # code...
+        echo '
+        <div>
+        <h6>' . $key['first_name'] .'</h6>
+        <img src="' . $key['picture'] . '  "
+        </div>       
+        ';
+    }
 ?>
 
 
