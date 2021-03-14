@@ -53,7 +53,7 @@
 
 <?php
 
-require 'helpers.php';
+include(app_path().'/app/helpers.php');
 ?>
 
 
