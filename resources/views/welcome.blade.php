@@ -64,9 +64,11 @@
 
         <div>
             <h5><?php echo $row['first_name'] ?> </h5>
-            <!-- <img src="<?php echo $row['picture'] ?>" /> -->
+            <img src="<?php echo $row['picture'] ?>" />
         </div>
 
+
+<?php
     }
 ?>
 
