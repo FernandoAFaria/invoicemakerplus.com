@@ -71,7 +71,7 @@ while($row = mysqli_fetch_assoc($users)){
                 echo $row['first_name']
             ?>
         </h3>
-        <img src="<?php $row['picture'] ?>" />
+  
     
     </div>
 
