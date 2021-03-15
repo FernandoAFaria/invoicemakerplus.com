@@ -100,9 +100,8 @@ button {
 }
 .nav-hidden {
   animation-name: hideNav;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
- 
 }
 .slide-in {
   animation-name: slideIn;
@@ -146,7 +145,7 @@ button {
     transform: translateY(-30px);
   }
 }
-
+/* END animations */
 
 #close-nav {
   position: fixed;
@@ -183,6 +182,11 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .space-between {
   justify-content: space-between;
 }
@@ -198,9 +202,10 @@ button {
   width: 100%;
   height: 100%;
   background: url('/images/bg_blob.svg');
-  background-position: revert;
+
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top;
   min-height: calc(100vh - 71px);
   display: flex;
   align-items: center;
@@ -247,6 +252,31 @@ button {
   max-width: 66vw;
 }
 
+/* why join */
+#why-join {
+  background: url('/images/why_join_bg.svg');
+  padding: 4rem 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 550px;
+}
+#why-join ul li{
+  font-size: calc(1vw + 16px);
+  margin-bottom: 1.5rem;;
+}
+.section-title {
+  font-size: calc(4vw + 16px);
+  text-align: center;
+
+
+}
+.section-title span{
+  display: inline-block;
+  color: #479CFF;
+  font-weight: bold;
+}
+
 @media (max-width: 1468px) {
   .container {
     max-width: 968px;
@@ -270,7 +300,12 @@ button {
     max-width: calc(90vw - 2rem);
   }
   .hero-container {
-    background: none;
+    /* background: none; */
+    background-size: 300vw auto;
+    
+  }
+  .hero-container .container{
+    margin-top: -5rem;
   }
   .hero-cta {
     width: 100%;
