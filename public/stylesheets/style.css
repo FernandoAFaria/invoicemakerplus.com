@@ -88,7 +88,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   transform: translateY(30px);
 }
 
@@ -160,9 +160,9 @@ button {
 }
 .nav-dropdown li {
   color: white;
-  font-size: calc(3.9vw + 19px);
+  font-size: calc(3.9vh + 19px);
 
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
 }
 .nav-dropdown li:hover a {
   color: rgb(250, 250, 250);
