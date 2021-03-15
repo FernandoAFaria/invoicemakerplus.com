@@ -40,12 +40,25 @@ button {
   margin-right: auto;
 }
 .nav {
-  position: relative;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  /* box-shadow: 0px 1px 1px rgba(211, 211, 211, 0.214); */
+  background: transparent;
+  box-shadow: none;
+  transition: background .3s, box-shadow .3s, padding-top .3s, padding-bottom .3s, top .3s;
 }
+.hidden{
+  /* background: white;
+  box-shadow: 0px 1px 10px rgba(144, 144, 144, 0.3);
+  padding-top: .75rem;
+  padding-bottom: .75rem */
+ top: -80px;
+}
+
 .nav a:hover {
   text-decoration: none;
 }
@@ -54,7 +67,7 @@ button {
   font-weight: bold;
 }
 .nav-btn {
-  background: #d4e8ff;
+  background: #B8F0C8;
 }
 .nav-btn a {
   color: #707070;
@@ -203,10 +216,10 @@ button {
   height: 100%;
   background: url('/images/bg_blob.svg');
 
-  background-size: cover;
+  background-size: auto 100vh;
   background-repeat: no-repeat;
-  background-position: top;
-  min-height: calc(100vh - 71px);
+  background-position: right;
+  min-height: calc(100vh);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -239,7 +252,7 @@ button {
   text-decoration: none;
 }
 .cta-btn:hover {
-  background: transparent;
+  background: #fff;
 }
 .cta-btn:hover a {
   color: #e94848;
@@ -250,30 +263,30 @@ button {
   top: 50%;
   transform: translateY(-50%);
   max-width: 66vw;
+ 
 }
 
 /* why join */
 #why-join {
   background: url('/images/why_join_bg.svg');
+  background-color: #eed9d9;
   padding: 4rem 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 550px;
 }
-#why-join ul li{
+#why-join ul li {
   font-size: calc(1vw + 16px);
-  margin-bottom: 1.5rem;;
+  margin-bottom: 1.5rem;
 }
 .section-title {
   font-size: calc(4vw + 16px);
   text-align: center;
-
-
 }
-.section-title span{
+.section-title span {
   display: inline-block;
-  color: #479CFF;
+  color: #479cff;
   font-weight: bold;
 }
 
@@ -287,9 +300,6 @@ button {
   .container {
     max-width: 768px;
   }
-  .hero-container {
-    background-size: 200% 105%;
-  }
 }
 
 @media (max-width: 968px) {
@@ -299,12 +309,7 @@ button {
   .container {
     max-width: calc(90vw - 2rem);
   }
-  .hero-container {
-    /* background: none; */
-    background-size: 300vw auto;
-    
-  }
-  .hero-container .container{
+  .hero-container .container {
     margin-top: -5rem;
   }
   .hero-cta {

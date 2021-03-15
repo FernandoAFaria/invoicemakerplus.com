@@ -17,12 +17,30 @@ const hideDropdown = function () {
     dropdownUl.classList.add('slide-out');
     dropdown.classList.add('nav-hidden');
 
-  
     setTimeout(() => {
-        console.log('executing')
-        dropdown.classList.remove('nav-visible');
-        dropdownUl.classList.remove('slide-in');
-        dropdown.style.display = 'none';
-    },700)
+      console.log('executing');
+      dropdown.classList.remove('nav-visible');
+      dropdownUl.classList.remove('slide-in');
+      dropdown.style.display = 'none';
+    }, 700);
   }
+};
+
+window.onload = function () {
+  const nav = document.querySelector('.nav');
+  let scrolled = false;
+  if (window.pageYOffset > 10) {
+    nav.classList.add('hidden');
+    scrolled = true;
+  }
+  document.addEventListener('scroll', function () {
+    console.log(window.pageYOffset);
+    if (window.pageYOffset > 10 && !scrolled) {
+      nav.classList.add('hidden');
+      scrolled = true;
+    } else if (window.pageYOffset < 10 && scrolled) {
+      nav.classList.remove('hidden');
+      scrolled = false;
+    }
+  });
 };
