@@ -101,24 +101,24 @@ button {
   height: 100%;
   background: url('/images/invoice_img.svg');
   background-position: revert;
-  background-size: 175% 105%;
+  background-size: 175% 100%;
   background-repeat: no-repeat;
-  min-height: 80vh;
+  min-height: 95vh;
   display: flex;
   align-items: center;
 }
 .hero-cta {
-  width: 50%;
+  width: 60%;
 }
 
 .hero-title {
   color: #565656;
   font-weight: bold;
-  font-size: 72px;
+  font-size: calc(4vw + 16px);
 }
 .hero-subtitle{
   color: #A1A1A1E6;
-  font-size: 42px;
+  font-size: calc(2vw + 16px);
 }
 .cta-btn {
   font-size: 32px;
