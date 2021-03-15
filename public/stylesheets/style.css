@@ -2,7 +2,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  background:rgb(230, 230, 230)
+  background:rgb(250, 250, 250)
 }
 
 a {
@@ -11,17 +11,40 @@ a {
 button {
   margin-bottom: 0;
 }
+
+/* Generic styles */
+
+.mt-1{
+  margin-top: .25rem;
+}
+.mt-2{
+  margin-top: .5rem;
+}
+.mt-3{
+  margin-top: 1rem;
+}
+.mt-4{
+  margin-top: 2rem;
+}
+.mt-5{
+  margin-top: 3rem;
+}
+
 .container {
   position: relative;
+  width: 100%;
   max-width: 1268px;
   margin-left: auto;
   margin-right: auto;
 }
 .nav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 0px 1px 1px rgba(211, 211, 211, 0.214);
+  /* box-shadow: 0px 1px 1px rgba(211, 211, 211, 0.214); */
 }
 .nav a:hover{
   text-decoration: none;
@@ -30,6 +53,12 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   
+}
+.nav-btn {
+  background: #D4E8FF;
+}
+.nav-btn a {
+  color: #707070;
 }
 .hamb-btn {
   padding-left: .75rem;
@@ -67,16 +96,50 @@ button {
 /* hero */
 .hero-container {
   display: flex;
-  min-height: 70vh;
   align-items: center;
-}
-.hero-text{
-  width: 50%
-}
-.hero-image {
-  width: 50%;
+  width: 100%;
   height: 100%;
   background: url('/images/invoice_img.svg');
+  background-position: revert;
+  background-size: 175% 105%;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.hero-cta {
+  width: 50%;
+}
+
+.hero-title {
+  color: #565656;
+  font-weight: bold;
+  font-size: 72px;
+}
+.hero-subtitle{
+  color: #A1A1A1E6;
+  font-size: 42px;
+}
+.cta-btn {
+  font-size: 32px;
+  font-weight: bold;
+  box-shadow: 0px 1px 16px rgba(0,0,0,.25);
+  border: 1px solid;
+  border-color: #EE7070; 
+  background: #EE7070;
+}
+.cta-btn a{
+  color: white;
+
+}
+.cta-btn a:hover{
+  text-decoration: none;
+}
+.cta-btn:hover{
+  background: transparent;
+}
+.cta-btn:hover a{
+  color: #EE7070;
 }
 
 @media (max-width: 1468px) {
@@ -85,21 +148,31 @@ button {
   }
 }
 
-@media (max-width: 1268px) {
-}
+
 
 @media (max-width: 1168px) {
   .container {
     max-width: 768px;
   }
+  .hero-container{
+    background-size: 200% 105%;
+  }
 }
 
 @media (max-width: 968px) {
+
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: calc(90vw - 2rem);
+  }
+  .hero-container {
+    background: none;
+  }
+  .hero-cta {
+    width: 100%;
+    text-align: center;
   }
 }
 
