@@ -1,11 +1,28 @@
-window.onload = () => {
-    const dropdownBtn = document.getElementById('user-menu')
+const showDropdown = function () {
+  const dropdown = document.querySelector('.nav-dropdown');
+  const dropdownUl = document.querySelector('.nav-dropdown ul');
+  if (!dropdown.classList.contains('nav-visible')) {
+    dropdown.style.display = 'block';
+    dropdownUl.classList.remove('slide-out');
+    dropdown.classList.remove('nav-hidden');
+    dropdown.classList.add('nav-visible');
+    dropdownUl.classList.add('slide-in');
+  }
+};
 
+const hideDropdown = function () {
+  const dropdown = document.querySelector('.nav-dropdown');
+  const dropdownUl = document.querySelector('.nav-dropdown ul');
+  if (dropdown.classList.contains('nav-visible')) {
+    dropdownUl.classList.add('slide-out');
+    dropdown.classList.add('nav-hidden');
 
-    // event listener
-
-    dropdownBtn.addEventListener('click', () => {
-        const dropdown = document.getElementById('user-dropdown')
-        dropdown.classList.toggle('hidden')
-    })
-}
+  
+    setTimeout(() => {
+        console.log('executing')
+        dropdown.classList.remove('nav-visible');
+        dropdownUl.classList.remove('slide-in');
+        dropdown.style.display = 'none';
+    },700)
+  }
+};

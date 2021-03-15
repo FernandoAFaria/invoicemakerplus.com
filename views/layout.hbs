@@ -30,7 +30,7 @@
         <div class="flex-row">
           <button class='nav-btn' role='link'><a>Login</a></button>
           <div class='nav-dropdown-btn'>
-            <button aria-label="menu" class='hamb-btn'>
+            <button aria-label="menu" class='hamb-btn' onclick="showDropdown()">
               <span class='sr-only'>Open Dropdown</span>
               <div class='nav-hamb'></div>
               <div class='nav-hamb'></div>
@@ -38,6 +38,16 @@
             </button>
           </div>
         </div>
+      </div>
+      <div aria-haspopup="true" aria-expanded="false" tabindex="-1" role="navigation" class='nav-dropdown' >
+        <button id='close-nav' aria-label="close" onclick="hideDropdown()">Close</button>
+        <ul role='menu'>
+          <li><a role='menuitem' href=''>Home</a></li>
+          <li><a role='menuitem' href=''>About</a></li>
+          <li><a role='menuitem' href=''>Sign Up</a></li>
+          <li><a role='menuitem' href=''>Login</a></li>
+          <li><a role='menuitem' href=''>Why Join?</a></li>
+        </ul>
       </div>
     </nav>
   </header>
