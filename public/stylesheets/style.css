@@ -2,7 +2,7 @@ body {
   max-width: 100%;
   margin: 0;
   padding: 0;
-  background: rgb(250, 250, 250);
+  background: #0b0c10;
 }
 
 a {
@@ -49,14 +49,14 @@ button {
   padding-bottom: 1rem;
   background: transparent;
   box-shadow: none;
-  transition: background .3s, box-shadow .3s, padding-top .3s, padding-bottom .3s, top .3s;
+  transition: background 0.3s, box-shadow 0.3s, padding-top 0.3s, padding-bottom 0.3s, top 0.3s;
 }
-.hidden{
+.hidden {
   /* background: white;
   box-shadow: 0px 1px 10px rgba(144, 144, 144, 0.3);
   padding-top: .75rem;
   padding-bottom: .75rem */
- top: -80px;
+  top: -80px;
 }
 
 .nav a:hover {
@@ -67,10 +67,16 @@ button {
   font-weight: bold;
 }
 .nav-btn {
-  background: #B8F0C8;
+  /* background: #00576b; */
+  margin-right: 2rem;
+}
+.nav button {
+  background: transparent;
+  border: 1px solid #66fcf1;
 }
 .nav-btn a {
-  color: #707070;
+  color: #cecece;
+  font-size: 19px;
 }
 .hamb-btn {
   padding-left: 0.75rem;
@@ -78,9 +84,9 @@ button {
 }
 .nav-hamb {
   position: relative;
-  width: 16px;
-  height: 1px;
-  background: #323223;
+  width: 19px;
+  height: 2px;
+  background: #cecece;
   margin: 0.25rem 0;
 }
 .nav-dropdown {
@@ -103,6 +109,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   transform: translateY(30px);
+  padding: 0;
 }
 
 /* animations */
@@ -215,26 +222,26 @@ button {
   width: 100%;
   height: 100%;
   background: url('/images/bg_blob.svg');
-
-  background-size: auto 100vh;
+  background-size: auto 110vh;
   background-repeat: no-repeat;
   background-position: right;
   min-height: calc(100vh);
   display: flex;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 .hero-cta {
   width: 60%;
 }
 
 .hero-title {
-  color: #565656;
+  color: #fdfdfd;
   font-weight: bold;
   font-size: calc(4vw + 16px);
 }
 .hero-subtitle {
-  color: #a1a1a1e6;
+  color: #c5c6c7;
   font-size: calc(2vw + 16px);
 }
 .cta-btn {
@@ -242,20 +249,20 @@ button {
   font-weight: bold;
   box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.25);
   border: 1px solid;
-  border-color: #e94848;
-  background: #e94848;
+  border-color: #66fcf1;
+  background: #66fcf1;
 }
 .cta-btn a {
-  color: white;
+  color: #0b0c10;
 }
 .cta-btn a:hover {
   text-decoration: none;
 }
 .cta-btn:hover {
-  background: #fff;
+  background: #0b0c10;
 }
 .cta-btn:hover a {
-  color: #e94848;
+  color: #66fcf1;
 }
 .cta-img {
   position: absolute;
@@ -263,13 +270,11 @@ button {
   top: 50%;
   transform: translateY(-50%);
   max-width: 66vw;
- 
 }
 
 /* why join */
 #why-join {
-  background: url('/images/why_join_bg.svg');
-  background-color: #eed9d9;
+  background: url('/images/why_join_bg.svg'), linear-gradient(#1f2833, #0b0c10);
   padding: 4rem 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -279,15 +284,51 @@ button {
 #why-join ul li {
   font-size: calc(1vw + 16px);
   margin-bottom: 1.5rem;
+  color: #a1a1a1e6;
 }
 .section-title {
   font-size: calc(4vw + 16px);
   text-align: center;
+  color: #d9d9d9;
 }
 .section-title span {
   display: inline-block;
-  color: #479cff;
+  color: #66fcf1;
   font-weight: bold;
+}
+/* 
+
+background animation
+*/
+.diag-slide {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(10deg, #080c1b 50%, #141f2e 70%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: absolute;
+  right: -50%;
+  top: 55%;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 50% ;
+}
+
+.bg-2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg-3 {
+  animation-duration: 5s;
+}
+@keyframes slide {
+  0% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(25%);
+  }
 }
 
 @media (max-width: 1468px) {
@@ -309,8 +350,11 @@ button {
   .container {
     max-width: calc(90vw - 2rem);
   }
+  .hero-container {
+    min-height: 70vh;
+    padding-top: 5rem;
+  }
   .hero-container .container {
-    margin-top: -5rem;
   }
   .hero-cta {
     width: 100%;
