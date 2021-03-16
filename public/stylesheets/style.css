@@ -65,6 +65,10 @@ button {
 .nav-logo {
   font-size: 1.5rem;
   font-weight: bold;
+  max-width: 250px;
+}
+.nav-logo img{
+  width: 100%;
 }
 .nav-btn {
   /* background: #00576b; */
@@ -354,8 +358,9 @@ background animation
     min-height: 70vh;
     padding-top: 5rem;
   }
-  .hero-container .container {
-  }
+ .nav-btn {
+   display: none;
+ }
   .hero-cta {
     width: 100%;
     text-align: center;
