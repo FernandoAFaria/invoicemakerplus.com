@@ -34,7 +34,6 @@ window.onload = function () {
     scrolled = true;
   }
   document.addEventListener('scroll', function () {
-    console.log(window.pageYOffset);
     if (window.pageYOffset > 10 && !scrolled) {
       nav.classList.add('hidden');
       scrolled = true;
