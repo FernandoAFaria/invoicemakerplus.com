@@ -395,7 +395,7 @@ button {
   background-position: center;
   min-height: 650px; 
   height: 90vh;
-  background: linear-gradient(to bottom,#1f2833, #0b0c10);
+  background: linear-gradient(to top,#1f2833, #0b0c10);
 }
 .price-card {
 
