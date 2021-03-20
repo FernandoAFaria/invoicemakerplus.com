@@ -406,7 +406,7 @@ button {
   background: url('/images/red_pricecard.svg'), #f0f0f0 ;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 105% auto;
+  background-size: cover;
   margin: 0 .5rem;
   filter:drop-shadow(2px 4px 8px #31313120);
 
@@ -414,9 +414,7 @@ button {
 
 .price-card.bg-blue{
   background: url('/images/blue_pricecard.svg'), #f0f0f0;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100% auto;
+
 }
 
 .price-card--pricing{
