@@ -414,7 +414,9 @@ button {
 
 .price-card.bg-blue{
   background: url('/images/blue_pricecard.svg'), #f0f0f0;
-
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .price-card--pricing{
