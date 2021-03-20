@@ -319,6 +319,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   min-height: 650px;
+  height: 90vh;
   background: linear-gradient(#1f2833, #0b0c10);
 }
 #why-join::after{
@@ -392,7 +393,8 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 550px;
+  min-height: 650px; 
+  height: 90vh;
   background: linear-gradient(to bottom,#1f2833, #0b0c10);
 }
 .price-card {
@@ -404,7 +406,7 @@ button {
   background: url('/images/red_pricecard.svg'), #f0f0f0 ;
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% auto;
+  background-size: 105% auto;
   margin: 0 .5rem;
   filter:drop-shadow(2px 4px 8px #479dff20);
 
