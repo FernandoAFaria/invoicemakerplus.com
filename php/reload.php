@@ -61,7 +61,7 @@ $commands = array(
 	'whoami',
 	'git pull',
 	'git status',
-    'echo "abc123" | sudo -S -u www-data pm2 restart 0 --watch',
+    'echo "Mustang1!" | sudo -S -u fernandoafaria pm2 restart 0 --watch',
 	'git submodule sync',
 	'git submodule update',
 	'git submodule status',
