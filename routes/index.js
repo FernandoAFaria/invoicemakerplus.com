@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Invoice Maker Plus' });
+  res.render('index', { title: 'Invoice Maker Plus', pageTitle: 'Invoice Maker Plus' });
 });
 
 module.exports = router;
