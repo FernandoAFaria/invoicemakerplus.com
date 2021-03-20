@@ -400,7 +400,7 @@ button {
 .price-card {
 
   min-height: 475px;
-  border-radius: 45% 5px 45% 5px;
+  border-radius: 25% 5px 25% 5px;
   padding: 3rem;
   max-width: calc(25%);
   background: url('/images/red_pricecard.svg'), #f0f0f0 ;
@@ -408,9 +408,10 @@ button {
   background-position: top;
   background-size: 105% auto;
   margin: 0 .5rem;
-  filter:drop-shadow(2px 4px 8px #479dff20);
+  filter:drop-shadow(2px 4px 8px #31313120);
 
 }
+
 .price-card.bg-blue{
   background: url('/images/blue_pricecard.svg'), #f0f0f0;
   background-repeat: no-repeat;
