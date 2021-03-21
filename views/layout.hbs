@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>{{title}}</title>
   <link rel='stylesheet' href='/stylesheets/watercss.css' />
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <meta name='theme-color' content='#66fcf1' />
+  <link rel="apple-touch-icon" href="/images/apple-touch.png">
+
   <meta name="format-detection" content="telephone=yes" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,12 +17,13 @@
   <meta name="language" content="english">
   <meta http-equiv="content-type" content="text/html">
   <meta name="no-email-collection" content="http://www.unspam.com/noemailcollection/">
-  <meta name="description" content="">
+  <meta name="description" content="Invoice Maker Plus - Easy invoice creation">
   <meta name="keywords" content="">
   <meta name=”robots” content=”no-index,no-follow”>
   <meta name="revisit-after" content="7 days">
   <meta name="distribution" content="web">
   <meta name=”robots” content=”noodp”>
+  <link rel="manifest" href="/javascripts/pwa.webmanifest">
 </head>
 
 <body class=''>
@@ -39,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div aria-haspopup="true" aria-expanded="false" tabindex="-1" role="navigation" class='nav-dropdown' >
+      <div aria-haspopup="true" aria-expanded="false" tabindex="-1" role="navigation" class='nav-dropdown'>
         <button id='close-nav' aria-label="close" onclick="hideDropdown()">Close</button>
         <ul role='menu'>
           <li><a role='menuitem' href=''>Home</a></li>
@@ -54,13 +58,14 @@
   <main class='my-5'>
     {{{body}}}
   </main>
-<footer class='footer'>
+  <footer class='footer'>
 
-</footer>
+  </footer>
 
 
   {{!-- scripts --}}
   <script src="/javascripts/app.js"></script>
+  <script src="/javascripts/pwa.js"></script>
 </body>
 
 </html>
